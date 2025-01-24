@@ -5,7 +5,7 @@ description = "It's about Ticket reservation"
 authors = [
     {name = "jacob-53", email = "jacob8753@gmail.com"},
 ]
-dependencies = []
+dependencies = ["typer>=0.15.1"]
 requires-python = ">=3.10"
 readme = "README.md"
 license = {text = "MIT"}
@@ -17,3 +17,13 @@ build-backend = "pdm.backend"
 
 [tool.pdm]
 distribution = true
+
+
+[project.scripts]
+cob-t = "cobstickettoy.cobstickettoy:entry_point"
+
+
+[dependency-groups]
+test = [
+    "pytest>=8.3.4",
+]
