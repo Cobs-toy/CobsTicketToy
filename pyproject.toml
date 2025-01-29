@@ -5,7 +5,7 @@ description = "It's about Ticket reservation"
 authors = [
     {name = "jacob-53", email = "jacob8753@gmail.com"},
 ]
-dependencies = ["typer>=0.15.1"]
+dependencies = ["typer>=0.15.1", "pandas>=2.2.3"]
 requires-python = ">=3.10"
 readme = "README.md"
 license = {text = "MIT"}
