@@ -1,25 +1,25 @@
+# Usage
+``` bash
+$ cob-t "jordan 1 retro" False
+```
+- "찾을 신발 이름" jordan 1 retro 혹은 레트로 아닌제품은 닉네임 키워드로 검색가능(ex : black toe)
+- 평균리셀가 내림차순으로 볼 경우 Fasle 오름차순으로 볼경우 True 입력
+
+
+# Dev
+``` bash
+$ source .venv/bin/activate
+$ pdm add pandas
+$ pdm add -dG eda jupyterlab
+```
+
+#Ref
+- [kaggle.com/kailingding](https://www.kaggle.com/datasets/kailingding/air-jordans-on-stockx)
+
+
+
 # CobsTicketToy
 First project of my toy project
-It's about Ticket reservation
-## Main Feature
-- Activate link button or open Ticket reservation page on time automatically.
+It's about my hobby 
 
-■ ProtoCobsToy
-- Just one step ahead of others
 
-■ Purpose 
-- It’s so hard to get tickets. I really want one!
-
-■ Expected Effects
-- "By staying one step ahead of others, you might be able to get the spot you want, right?"
-
-![Image](https://github.com/user-attachments/assets/6ee62c20-7c6a-47a2-9341-9cea5e24fe13)
-
-■ Rationale
-- "Sometimes, the sales page or link button opens even before the scheduled sale time."
-
-- 
-![Image](https://github.com/user-attachments/assets/a6a3ca68-04af-4368-9ae6-8dfe86f1b546)
-
-■ Target
-- "A person who always fails to secure a ticket and refuses to pay a premium for it."
