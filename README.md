@@ -17,17 +17,19 @@ $ cob-t "eminem" False "highest_price"
                                 name  sales retail_price  average_sale_price  highest_price  lowest_price release_date
       Jordan 4 Retro Eminem Carhartt      3                             8833          10500          7000   11/23/2015
 Jordan 2 Retro Eminem (The Way I Am)      9          110                3249           4999          2700   12/18/2008
-
-
-$ cob-t "jordan 1 retro" False "average_sale_price"
-
-- "찾을 신발 이름" jordan 1 retro"(ex : jordan 3,jordan 5 retro)<br/> 혹은 닉네임 키워드로 검색가능(ex : black toe,chicago)
-- 평균리셀가 내림차순으로 볼 경우 Fasle 오름차순으로 볼경우 True 입력
-- "average_sale_price" wotby 자리에 입력 시 평균 리세일 가격 기준 출력<br/> "highest_price" 입력시 
 ```
 
+```
+$ cob-t "jordan 1 retro" False "average_sale_price"
+```
+
+- "찾을 신발 이름" jordan 1 retro"(ex : jordan 3,jordan 5 retro)<br/>혹은 닉네임 키워드로 검색가능(ex : black toe,chicago)
+- 평균리세일가격 내림차순으로 볼 경우 Fasle 오름차순으로 볼경우 True 입력
+- "average_sale_price" wotby 자리에 입력 시 평균 리세일 가격 기준 출력<br/>"highest_price" 입력시 최고액 판매가 기준 출력 
+
+
 # Dev
-``` bash
+```
 $ source .venv/bin/activate
 $ pdm add pandas
 $ pdm add -dG eda jupyterlab
