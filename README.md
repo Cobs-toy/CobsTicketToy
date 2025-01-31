@@ -1,10 +1,30 @@
 # Usage
-``` bash
-$ cob-t "jordan 1 retro" False
-```
-- "찾을 신발 이름" jordan 1 retro 혹은 레트로 아닌제품은 닉네임 키워드로 검색가능(ex : black toe)
-- 평균리셀가 내림차순으로 볼 경우 Fasle 오름차순으로 볼경우 True 입력
+``` 
+Usage: cob-t [OPTIONS] KEYWORD ASORDE WOTBY
 
+╭─ Arguments ──────────────────────────────────────────────╮
+│ *    keyword      TEXT  [default: None] [required]       │
+│ *    asorde             [default: None] [required]       │
+│ *    wotby        TEXT  [default: None] [required]       │
+╰──────────────────────────────────────────────────────────╯
+╭─ Options ────────────────────────────────────────────────╮
+│ --help          Show this message and exit.              │
+╰──────────────────────────────────────────────────────────╯
+
+
+$ cob-t "eminem" False "highest_price"
+
+                                name  sales retail_price  average_sale_price  highest_price  lowest_price release_date
+      Jordan 4 Retro Eminem Carhartt      3                             8833          10500          7000   11/23/2015
+Jordan 2 Retro Eminem (The Way I Am)      9          110                3249           4999          2700   12/18/2008
+
+
+$ cob-t "jordan 1 retro" False "average_sale_price"
+
+- "찾을 신발 이름" jordan 1 retro"(ex : jordan 3,jordan 5 retro)<br/> 혹은 닉네임 키워드로 검색가능(ex : black toe,chicago)
+- 평균리셀가 내림차순으로 볼 경우 Fasle 오름차순으로 볼경우 True 입력
+- "average_sale_price" wotby 자리에 입력 시 평균 리세일 가격 기준 출력<br/> "highest_price" 입력시 
+```
 
 # Dev
 ``` bash
@@ -13,13 +33,12 @@ $ pdm add pandas
 $ pdm add -dG eda jupyterlab
 ```
 
-#Ref
+# Ref
 - [kaggle.com/kailingding](https://www.kaggle.com/datasets/kailingding/air-jordans-on-stockx)
 
 
 
 # CobsTicketToy
-First project of my toy project
-It's about my hobby 
+First project of my toy project<br/>It's about my hobby 
 
 
