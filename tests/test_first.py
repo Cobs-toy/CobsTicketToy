@@ -1,6 +1,8 @@
-from cobstickettoy.cobstickettoy import today_num
+from cobstickettoy.cobstickettoy import aj_count
+import pandas as pd
 
-def test_t1():
-    g = today_num(1,10)
-    assert g >= 1
-    assert g <= 10
+def test_ajc():
+    df = aj_count("black toe" , False,"average_sale_price" )
+    assert isinstance(df,pd.DataFrame)
+    assert len(df) >= 1
+    assert df.iat[0,2] >= df.iat[1,2]

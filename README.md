@@ -1,25 +1,46 @@
+# Usage
+``` 
+Usage: cob-t [OPTIONS] KEYWORD ASORDE WOTBY
+
+╭─ Arguments ──────────────────────────────────────────────╮
+│ *    keyword      TEXT  [default: None] [required]       │
+│ *    asorde             [default: None] [required]       │
+│ *    wotby        TEXT  [default: None] [required]       │
+╰──────────────────────────────────────────────────────────╯
+╭─ Options ────────────────────────────────────────────────╮
+│ --help          Show this message and exit.              │
+╰──────────────────────────────────────────────────────────╯
+
+
+$ cob-t "eminem" False "highest_price"
+
+                                name  sales retail_price  average_sale_price  highest_price  lowest_price release_date
+      Jordan 4 Retro Eminem Carhartt      3                             8833          10500          7000   11/23/2015
+Jordan 2 Retro Eminem (The Way I Am)      9          110                3249           4999          2700   12/18/2008
+```
+
+```
+$ cob-t "jordan 1 retro" False "average_sale_price"
+```
+
+- "찾을 신발 이름" jordan 1 retro"(ex : jordan 3,jordan 5 retro)<br/>혹은 닉네임 키워드로 검색가능(ex : black toe,chicago)
+- 평균리세일가격 내림차순으로 볼 경우 Fasle 오름차순으로 볼경우 True 입력
+- "average_sale_price" wotby 자리에 입력 시 평균 리세일 가격 기준 출력<br/>"highest_price" 입력시 최고액 판매가 기준 출력 
+- 금액은 USD $ 입니다.
+
+# Dev
+```
+$ source .venv/bin/activate
+$ pdm add pandas
+$ pdm add -dG eda jupyterlab
+```
+
+# Ref
+- [kaggle.com/kailingding](https://www.kaggle.com/datasets/kailingding/air-jordans-on-stockx)
+
+
+
 # CobsTicketToy
-First project of my toy project
-It's about Ticket reservation
-## Main Feature
-- Activate link button or open Ticket reservation page on time automatically.
+First project of my toy project<br/>It's about my hobby 
 
-■ ProtoCobsToy
-- Just one step ahead of others
 
-■ Purpose 
-- It’s so hard to get tickets. I really want one!
-
-■ Expected Effects
-- "By staying one step ahead of others, you might be able to get the spot you want, right?"
-
-![Image](https://github.com/user-attachments/assets/6ee62c20-7c6a-47a2-9341-9cea5e24fe13)
-
-■ Rationale
-- "Sometimes, the sales page or link button opens even before the scheduled sale time."
-
-- 
-![Image](https://github.com/user-attachments/assets/a6a3ca68-04af-4368-9ae6-8dfe86f1b546)
-
-■ Target
-- "A person who always fails to secure a ticket and refuses to pay a premium for it."
