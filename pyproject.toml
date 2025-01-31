@@ -1,7 +1,7 @@
 [project]
 name = "CobsTicketToy"
 version = "0.2.1"
-description = "It's about Ticket reservation"
+description = "It's about my hobby"
 authors = [
     {name = "jacob-53", email = "jacob8753@gmail.com"},
 ]
