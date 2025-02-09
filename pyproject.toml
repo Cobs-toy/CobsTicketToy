@@ -1,6 +1,6 @@
 [project]
 name = "CobsTicketToy"
-version = "0.2.1"
+version = "0.3.0"
 description = "It's about my hobby"
 authors = [
     {name = "jacob-53", email = "jacob8753@gmail.com"},
