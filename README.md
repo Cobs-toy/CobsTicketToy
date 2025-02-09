@@ -1,9 +1,10 @@
 # Usage
 
-[image](.src/images/toy.png)
+![lookuppage](src/images/toy.png)
 
 - 모든 칸을 입력해야만 작동합니다.
-- 이름 입력시 전체 이름 혹은 키워드 연속 된 이름 입력만 가능합니다 <br\>ex: Jordan 1 retro black toe -> jordan 1 혹은 black toe 혹은 1 retro
+- 이름 입력시 전체 이름 혹은 키워드 혹은 연속 된 이름 입력만 가능합니다 <br\> ex: Jordan 1 retro black toe -> "jordan 1" or "black toe" or "1 retro"
+
 - off-white 제품 검색시 off-white "-" 넣어서 검색해야 합니다 
 
 
