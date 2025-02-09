@@ -5,7 +5,7 @@ description = "It's about my hobby"
 authors = [
     {name = "jacob-53", email = "jacob8753@gmail.com"},
 ]
-dependencies = ["typer>=0.15.1", "pandas>=2.2.3"]
+dependencies = ["typer>=0.15.1", "pandas>=2.2.3", "streamlit>=1.42.0", "psycopg[binary,pool]>=3.2.4", "python-dotenv>=1.0.1"]
 requires-python = ">=3.10"
 readme = "README.md"
 license = {text = "MIT"}
